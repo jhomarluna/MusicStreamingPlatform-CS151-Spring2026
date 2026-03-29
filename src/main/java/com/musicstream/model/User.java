@@ -1,0 +1,96 @@
+package com.musicstream.model;
+
+import com.musicstream.interface_.Streamable;
+import java.time.LocalDate;
+
+/**
+ * Abstract base class for all users of the music streaming platform.
+ * Provides shared identity and account fields for FreeUser and PremiumUser.
+ */
+public abstract class User {
+
+    private static int instanceCount = 0;
+
+    private String userId;
+    private String username;
+    private String email;
+    private String passwordHash;
+    private LocalDate registrationDate;
+    private boolean isActive;
+
+    public User(String userId, String username, String email, String passwordHash) {
+        this.userId = userId;
+        this.username = username;
+        this.email = email;
+        this.passwordHash = passwordHash;
+        this.registrationDate = LocalDate.now();
+        this.isActive = true;
+    }
+
+    // ── Abstract methods ──────────────────────────────────────────────────────
+
+    /** Returns the subscription tier label, e.g. "Free" or "Premium". */
+    public abstract String getSubscriptionType();
+
+    /** Returns the monthly listening‑hour cap for this user tier (-1 = unlimited). */
+    public abstract int getMonthlyHourLimit();
+
+    /** Attempts to stream the given song; tier‑specific validation lives here. */
+    public abstract void streamContent(Streamable content);
+
+    // ── Static instance tracking ──────────────────────────────────────────────
+
+    public static int getInstanceCount() { return instanceCount; }
+
+    public static void incrementInstanceCount() { instanceCount++; }
+
+    public static void decrementInstanceCount() { instanceCount--; }
+
+    // ── Getters & Setters ─────────────────────────────────────────────────────
+
+    public String getUserId() { return userId; }
+
+    public String getUsername() { return username; }
+
+    public void setUsername(String username) {
+        if (username == null || username.trim().isEmpty()) {
+            throw new IllegalArgumentException("Username cannot be empty.");
+        }
+        this.username = username.trim();
+    }
+
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) {
+        if (email == null || !email.contains("@")) {
+            throw new IllegalArgumentException("Invalid email address.");
+        }
+        this.email = email.trim();
+    }
+
+    public String getPasswordHash() { return passwordHash; }
+
+    public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
+
+    /**
+     * Updates the account password with basic validation.
+     */
+    public void changePassword(String newPassword) {
+        if (newPassword == null || newPassword.length() < 4) {
+            throw new IllegalArgumentException("Password must be at least 4 characters.");
+        }
+        this.passwordHash = newPassword;
+    }
+
+    public LocalDate getRegistrationDate() { return registrationDate; }
+
+    public boolean isActive() { return isActive; }
+
+    public void setActive(boolean active) { this.isActive = active; }
+
+    @Override
+    public String toString() {
+        return String.format("User[id=%s, username=%s, email=%s, type=%s, active=%s]",
+                userId, username, email, getSubscriptionType(), isActive);
+    }
+}

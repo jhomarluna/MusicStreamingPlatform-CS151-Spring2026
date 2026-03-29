@@ -1,0 +1,17 @@
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/exception/StreamingPermissionException.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/Artist.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/Playlist.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/Platform.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/package-info.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/exception/NotFoundException.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/User.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/interface_/Streamable.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/FreeUser.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/exception/InstanceLimitException.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/ui/MainMenu.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/util/DataLoader.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/ModelLimits.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/PremiumUser.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/util/InputHandler.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/Song.java
+/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/src/main/java/com/musicstream/model/Album.java

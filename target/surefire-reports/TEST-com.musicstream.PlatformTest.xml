@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.musicstream.PlatformTest" time="0.033" tests="21" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/test-classes:/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/classes:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/surefire/surefirebooter-20260328234028225_3.jar /Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/surefire 2026-03-28T23-40-28_149-jvmRun1 surefire-20260328234028225_1tmp surefire_0-20260328234028225_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/test-classes:/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/classes:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/veedhibhanushali/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/veedhibhanushali"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026/target/surefire/surefirebooter-20260328234028225_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25"/>
+    <property name="user.name" value="veedhibhanushali"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/veedhibhanushali/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/mh/rr0d6vcx56v8yhxl7jnv1mkw0000gn/T/"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="/Users/veedhibhanushali/Downloads/MusicStreamingPlatform-CS151-Spring2026"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/veedhibhanushali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testRegisterFreeUser" classname="com.musicstream.PlatformTest" time="0.011">
+    <system-out><![CDATA[✔ Registered Free user: alice (U001)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterPremiumUser" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Registered Premium user: bob (U001)
+]]></system-out>
+  </testcase>
+  <testcase name="testDuplicateEmail" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Registered Free user: user1 (U001)
+]]></system-out>
+  </testcase>
+  <testcase name="testAddAndFindArtist" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Test Artist (A001)
+]]></system-out>
+  </testcase>
+  <testcase name="testArtistNotFound" classname="com.musicstream.PlatformTest" time="0.001"/>
+  <testcase name="testVerifyArtist" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Verified Artist (A001)
+✔ Artist "Verified Artist" is now verified.
+]]></system-out>
+  </testcase>
+  <testcase name="testAddSong" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Song Artist (A001)
+Added "Test Song" to Song Artist's discography.
+✔ Added song: "Test Song" (S001)
+]]></system-out>
+  </testcase>
+  <testcase name="testPlayCount" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Added artist: Play Artist (A001)
+Added "Count Song" to Play Artist's discography.
+✔ Added song: "Count Song" (S001)
+]]></system-out>
+  </testcase>
+  <testcase name="testFormattedDuration" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Duration Artist (A001)
+Added "3:30 Song" to Duration Artist's discography.
+✔ Added song: "3:30 Song" (S001)
+]]></system-out>
+  </testcase>
+  <testcase name="testAlbum" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Added artist: Album Artist (A001)
+Added album "Test Album" to Album Artist's profile.
+✔ Added album: "Test Album" (AL001)
+Added "Track 1" to Album Artist's discography.
+✔ Added song: "Track 1" (S001)
+Added "Track 2" to Album Artist's discography.
+✔ Added song: "Track 2" (S002)
+"Track 1" assigned to album AL001
+Added "Track 1" to album "Test Album".
+"Track 2" assigned to album AL001
+Added "Track 2" to album "Test Album".
+]]></system-out>
+  </testcase>
+  <testcase name="testPublishEmptyAlbum" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Empty Album Artist (A001)
+Added album "Empty Album" to Empty Album Artist's profile.
+✔ Added album: "Empty Album" (AL001)
+⚠ Cannot publish an empty album.
+]]></system-out>
+  </testcase>
+  <testcase name="testAlbumTotalDuration" classname="com.musicstream.PlatformTest" time="0.002">
+    <system-out><![CDATA[✔ Added artist: Dur Artist (A001)
+Added album "Dur Album" to Dur Artist's profile.
+✔ Added album: "Dur Album" (AL001)
+Added "Dur Track 1" to Dur Artist's discography.
+✔ Added song: "Dur Track 1" (S001)
+Added "Dur Track 2" to Dur Artist's discography.
+✔ Added song: "Dur Track 2" (S002)
+"Dur Track 1" assigned to album AL001
+Added "Dur Track 1" to album "Dur Album".
+"Dur Track 2" assigned to album AL001
+Added "Dur Track 2" to album "Dur Album".
+]]></system-out>
+  </testcase>
+  <testcase name="testPlaylist" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Added artist: PL Artist (A001)
+Added "PL Song" to PL Artist's discography.
+✔ Added song: "PL Song" (S001)
+✔ Registered Free user: pluser (U001)
+✔ Playlist "My List" created.
+Added "PL Song" to playlist "My List".
+]]></system-out>
+  </testcase>
+  <testcase name="testNoDuplicateSongsInPlaylist" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Dup PL Artist (A001)
+Added "Dup PL Song" to Dup PL Artist's discography.
+✔ Added song: "Dup PL Song" (S001)
+✔ Registered Free user: dupuser (U001)
+✔ Playlist "Dup List" created.
+Added "Dup PL Song" to playlist "Dup List".
+"Dup PL Song" is already in playlist "Dup List".
+]]></system-out>
+  </testcase>
+  <testcase name="testFreeUserExplicitBlocked" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Added artist: Exp Artist (A001)
+Added "Explicit Song" to Exp Artist's discography.
+✔ Added song: "Explicit Song" (S001)
+✔ Registered Free user: freeexp (U001)
+❌ Free users cannot stream explicit content. Upgrade to Premium.
+]]></system-out>
+  </testcase>
+  <testcase name="testPremiumUserExplicit" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Prem Exp Artist (A001)
+Added "Prem Explicit Song" to Prem Exp Artist's discography.
+✔ Added song: "Prem Explicit Song" (S001)
+✔ Registered Premium user: premexp (U001)
+▶ Now playing: "Prem Explicit Song"
+]]></system-out>
+  </testcase>
+  <testcase name="testSearchByGenre" classname="com.musicstream.PlatformTest" time="0.002">
+    <system-out><![CDATA[✔ Added artist: Genre Artist (A001)
+Added "Jazz Track 1" to Genre Artist's discography.
+✔ Added song: "Jazz Track 1" (S001)
+Added "Jazz Track 2" to Genre Artist's discography.
+✔ Added song: "Jazz Track 2" (S002)
+Added "Pop Track" to Genre Artist's discography.
+✔ Added song: "Pop Track" (S003)
+Found 2 song(s) in genre "Jazz".
+Found 1 song(s) in genre "Pop".
+]]></system-out>
+  </testcase>
+  <testcase name="testTopSongs" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Added artist: Top Artist (A001)
+Added "High Play" to Top Artist's discography.
+✔ Added song: "High Play" (S001)
+Added "Low Play" to Top Artist's discography.
+✔ Added song: "Low Play" (S002)
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidEmail" classname="com.musicstream.PlatformTest" time="0.002">
+    <system-out><![CDATA[✔ Registered Free user: validuser (U001)
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeListeners" classname="com.musicstream.PlatformTest" time="0.0">
+    <system-out><![CDATA[✔ Added artist: Neg Listener Artist (A001)
+]]></system-out>
+  </testcase>
+  <testcase name="testChangePassword" classname="com.musicstream.PlatformTest" time="0.001">
+    <system-out><![CDATA[✔ Registered Free user: pwuser (U001)
+]]></system-out>
+  </testcase>
+</testsuite>
