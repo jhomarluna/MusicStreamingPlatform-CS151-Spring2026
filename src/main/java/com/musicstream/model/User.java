@@ -123,6 +123,28 @@ public abstract class User {
         }
     }
 
+    public void getFriendCount() {
+        System.out.println(username + " has " + friends.size() + " friend(s).");
+    }
+
+    public void getFriendCurrentSong() {
+        if (friends.isEmpty()) {
+            System.out.println(username + " has no friends to check.");
+        } else {
+            System.out.println(username + "'s friends' current songs:");
+            for (User friend : friends) {
+                if (friend instanceof Streamable) {
+                    Streamable streamableFriend = (Streamable) friend;
+                    System.out.println("- " + friend.getUsername() + ": " + streamableFriend.getCurrentSong());
+                } else {
+                    System.out.println("- " + friend.getUsername() + ": Not streaming");
+                }
+            }
+        }
+    }
+
+    
+
     @Override
     public String toString() {
         return String.format("User[id=%s, username=%s, email=%s, type=%s, active=%s]",
