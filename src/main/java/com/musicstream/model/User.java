@@ -1,7 +1,10 @@
 package com.musicstream.model;
 
-import com.musicstream.interface_.Streamable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.musicstream.interface_.Streamable;
 
 /**
  * Abstract base class for all users of the music streaming platform.
@@ -17,6 +20,7 @@ public abstract class User {
     private String passwordHash;
     private LocalDate registrationDate;
     private boolean isActive;
+    private List<User> friends = new ArrayList<>();
 
     public User(String userId, String username, String email, String passwordHash) {
         this.userId = userId;
@@ -87,6 +91,37 @@ public abstract class User {
     public boolean isActive() { return isActive; }
 
     public void setActive(boolean active) { this.isActive = active; }
+
+    public List<User> getFriends() { return friends; }
+
+    public void addFriend(User friend) {
+        if (friend == null || friend == this || friends.contains(friend)) {
+            throw new IllegalArgumentException("Invalid friend.");
+        }
+        friends.add(friend);
+    }
+
+    public void removeFriend(User friend) {
+        if (friend == null || !friends.contains(friend)) {
+            throw new IllegalArgumentException("Friend not found.");
+        }
+        friends.remove(friend);
+    }
+
+    public boolean isFriend(User user) {
+        return friends.contains(user);
+    }
+
+    public void displayFriends() {
+        if (friends.isEmpty()) {
+            System.out.println(username + " has no friends.");
+        } else {
+            System.out.println(username + "'s friends:");
+            for (User friend : friends) {
+                System.out.println("- " + friend.getUsername());
+            }
+        }
+    }
 
     @Override
     public String toString() {
